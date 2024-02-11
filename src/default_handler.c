@@ -12,7 +12,7 @@ http_response *get_default_page(http_request *request)
 	const char content_type[] = "Content-Type: text/html\r\n";
 	response->content_type = memdup(content_type, sizeof(content_type));
 	char	*payload = memalloc(1024 * sizeof(char));
-	sprintf(payload, "<html><title>Homepage</title><h1>Hello from your 3DS</h1><p>I'm running firmware %lu</p><p><a href="/sdcard/httpd/index.html">Click here.</a></p></html>", osGetFirmVersion());
+	sprintf(payload, '<html><head><meta http-equiv="refresh" content="0; url=/sdcard/httpd/index.html><title>Httpd</title></head><body><p><a href="/sdcard/httpd/index.html">Click here if redirect fails</a></p></body</html>', osGetFirmVersion());
 	response->payload = payload;
      response->payload_len = strlen(response->payload);
 	return response;
