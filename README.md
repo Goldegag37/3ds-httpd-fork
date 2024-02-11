@@ -6,7 +6,7 @@ Available on Universal-Updater!
 #### Default Handler  
 	- Path: /  
 	- Description:  
-		Returns a hardcoded HTML response  
+		redirects to /sdcard/httpd/index.html
 #### Favicon Handler  
 	- Path: /favicon.ico  
 	- Description:  
