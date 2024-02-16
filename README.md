@@ -1,7 +1,5 @@
 # 3ds-httpd
 ## A modular web server for your 3ds
-Just install the CIA or run 3dsx and you're good to go!
-Available on Universal-Updater!
 ### Path Handlers
 #### Default Handler  
 	- Path: /  
