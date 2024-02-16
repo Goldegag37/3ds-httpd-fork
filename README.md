@@ -10,10 +10,10 @@
 	- Description:  
 		Returns a hardcoded SVG favicon  
 #### System Handler  
-	- Path: /system/  
+	- Path: /system/3ds/  
 	- Description:  
-		/system/exit - Exits app  
-		/system/reboot - Reboots system  
+		/system/3ds/exit - Exits app  
+		/system/3ds/reboot - Reboots system  
 #### SDMC Handler  
 	- Path: /sdcard/  
 	- Description:  

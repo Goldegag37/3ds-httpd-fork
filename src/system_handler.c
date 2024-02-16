@@ -27,12 +27,12 @@ http_response *get_system_handler_response(http_request *request)
 
 void pre_system_response(http_server *server, http_request *request)
 {
-	if (!strcmp(request->path, "/system/exit"))
+	if (!strcmp(request->path, "/system/3ds/exit"))
 	{
 		printTop("Remote app exit triggered!");
 		server->running = 0;
 	}
-	else if (!strcmp(request->path, "/system/reboot"))
+	else if (!strcmp(request->path, "/system/3ds/reboot"))
 	{
 		printTop("System reboot asked!");
 		system_reboot();
